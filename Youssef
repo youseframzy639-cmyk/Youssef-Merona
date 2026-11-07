@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youssef & Merona Engagement</title>
+    <link href="Image/icon.png" rel="icon" type="image/x-icon">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Great+Vibes&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Playfair Display', serif;
+            background-color: #faf7f2;
+            color: #333;
+            text-align: center;
+            overflow-x: hidden;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header, .section {
+            padding: 40px 20px;
+        }
+        h1 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 3.5rem;
+            color: #b28d55;
+            margin: 10px 0;
+        }
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #4a4a4a;
+        }
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #666;
+            margin-bottom: 15px;
+        }
+        .heart {
+            color: #d4a373;
+            font-size: 1.5rem;
+            margin: 10px 0;
+        }
+        .date {
+            font-size: 1.3rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: #555;
+            margin: 20px 0;
+        }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .gallery-grid img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .countdown {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .countdown-box {
+            background: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            min-width: 70px;
+        }
+        .countdown-box span {
+            display: block;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #b28d55;
+        }
+        .countdown-box small {
+            font-size: 0.8rem;
+            color: #888;
+        }
+        footer {
+            margin-top: 40px;
+            padding: 20px;
+            font-size: 0.9rem;
+            color: #888;
+            border-top: 1px solid #eaeaea;
+        }
+    </style>
+</head>
+<body>
+
+    <audio hidden loop autoplay>
+        <source src="Music/Video Project 2.m4a" type="audio/mp4">
+    </audio>
+
+    <div class="container">
+        <!-- Hero Section -->
+        <header>
+            <div class="heart">❤</div>
+            <h1>
+                Youssef <br>
+                <span>&amp;</span> <br>
+                Merona
+            </h1>
+            <div class="heart">❤</div>
+            <p class="date">16 / 11 / 2026</p>
+            <p>يسعدنا حضوركم ومشاركتنا أفرَح أيام خطوبتنا.</p>
+        </header>
+
+        <!-- Our Story -->
+        <div class="section">
+            <h2>Our Story</h2>
+            <p>بداية حكايتنا كانت بداية لحياة جديدة.. ولحظات بتبقي للابد..❤</p>
+        </div>
+
+        <!-- Memories / Gallery -->
+        <div class="section">
+            <h2>Memories of Love</h2>
+            <div class="gallery-grid">
+                <img alt="Memory 1" src="Image/kero2.jpeg">
+                <img alt="Memory 2" src="Image/k4.jpeg">
+                <img alt="Memory 3" src="Image/k5.jpeg">
+                <img alt="Memory 4" src="Image/k8.jpeg">
+                <img alt="Memory 5" src="Image/k6.jpeg">
+                <img alt="Memory 6" src="Image/k7.jpeg">
+            </div>
+        </div>
+
+        <!-- Save The Date -->
+        <div class="section">
+            <h2>Save the Date</h2>
+            <p>في انتظاركم لنحتفل معاً بيوم خطوبتنا المميز!</p>
+            <p><strong>MONDAY | 16 | NOVEMBER | 2026</strong></p>
+
+            <div class="countdown">
+                <div class="countdown-box">
+                    <span id="days">0</span>
+                    <small>Days</small>
+                </div>
+                <div class="countdown-box">
+                    <span id="hours">0</span>
+                    <small>Hours</small>
+                </div>
+                <div class="countdown-box">
+                    <span id="minutes">0</span>
+                    <small>Minutes</small>
+                </div>
+                <div class="countdown-box">
+                    <span id="seconds">0</span>
+                    <small>Seconds</small>
+                </div>
+            </div>
+        </div>
+
+        <!-- Location -->
+        <div class="section">
+            <h3>حفل الخطوبة</h3>
+            <p>وجودكم معنا في يوم خطوبتنا يشرفنا ويزيد فرحتنا سروراً 🤵👰</p>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            Made with All Love ❤️ by Youssef & Merona
+        </footer>
+    </div>
+
+    <script>
+        // Countdown script targeted for November 16, 2026
+        const engagementDate = new Date("November 16, 2026 17:00:00").getTime();
+
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const distance = engagementDate - now;
+
+            if (distance > 0) {
+                document.getElementById("days").innerText = Math.floor(distance / (1000 * 60 * 60 * 24));
+                document.getElementById("hours").innerText = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                document.getElementById("minutes").innerText = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                document.getElementById("seconds").innerText = Math.floor((distance % (1000 * 60)) / 1000);
+            } else {
+                document.getElementById("days").innerText = "0";
+                document.getElementById("hours").innerText = "0";
+                document.getElementById("minutes").innerText = "0";
+                document.getElementById("seconds").innerText = "0";
+            }
+        }
+
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+    </script>
+</body>
+</html>
